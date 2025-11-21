@@ -19,6 +19,9 @@ Celery - асинхронная очередь задач для отправк�
 
 ### Полная инструкция для запуска:
 
+git clone https://github.com/Neolog13/edunotifier.git
+cd edunotifier
+
 1. Создание виртуального окружения
    python -m venv venv
 
@@ -49,7 +52,7 @@ http://127.0.0.1:8000/api/auth/register/
 {
   "username": "teacher_demo",
   "email": "teacher@example.com",
-  "password": "teacher123"
+  "password": "teacher123",
   "first_name": "Иван",
   "last_name": "Преподавателев",
   "user_type": "teacher"
