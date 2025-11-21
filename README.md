@@ -42,6 +42,30 @@ celery -A edunotifier worker --loglevel=info
 Терминал 3 - Django сервер
 python manage.py runserver
 
+Создание пользователей:
+http://127.0.0.1:8000/api/auth/register/
+
+Учитель:
+{
+  "username": "teacher_demo",
+  "email": "teacher@example.com",
+  "password": "teacher123"
+  "first_name": "Иван",
+  "last_name": "Преподавателев",
+  "user_type": "teacher"
+}
+
+Студент:
+{
+  "username": "student_demo",
+  "email": "student@example.com", 
+  "password": "student123",
+  "first_name": "Петр",
+  "last_name": "Студентов",
+  "user_type": "student"
+}
+
+
 ### Доступ к приложению
 API: http://localhost:8000/api/
 
